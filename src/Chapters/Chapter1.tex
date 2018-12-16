@@ -1,381 +1,132 @@
-%% LyX 2.3.2 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass{article}
-\usepackage[latin9]{inputenc}
-\usepackage{amstext}
-\begin{document}
 % Chapter 1
 
 \chapter{Introduction} % Main chapter title
 
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-Over the last few years, distributed ledger technology and trustless
-blockchain have begun to rewire the state of communication, knowledge,
-and the entire economy. In particular, such technology has the potential
-to transform the financial services industry, benefiting both clients
-and participating firms alike. Distributed ledgers promise a future
-where every agreement is automatically recorded and managed without
-error, making sure anyone can make frictionless transactions for any
-contractual purpose. Phenomena such as duplication, reconciliation,
-failed matches, and breaks will all be a relic of the past. The combined
-success of the free software ecosystems, decentralized file-sharing,
-and public cryptocurrencies has rekindled the notion that decentralized
-internet protocols can radically improve societal infrastructure.
+Over the last few years, distributed ledger technology and trustless blockchain have begun to rewire the state of communication, knowledge, and the entire economy. In particular, such technology has the potential to transform the financial services industry, benefiting both clients and participating firms alike. Distributed ledgers promise a future where every agreement is automatically recorded and managed without error, making sure anyone can make frictionless transactions for any contractual purpose. Phenomena such as duplication, reconciliation, failed matches, and breaks will all be a relic of the past. The combined success of the free software ecosystems, decentralized file-sharing, and public cryptocurrencies has rekindled the notion that decentralized internet protocols can radically improve societal infrastructure.
 
-Redundant products overwhelm us all in the information era; judging
-product authenticity is more difficult than ever before. This creates
-a harsh environment for product discovery, resulting in the loss of
-many otherwise valuable products. Rather than worrying about product
-scarcity, consumers are exhausted by the barrage of goods and services
-made available to them. This problem - the inefficiency inherent to
-uncovering valuable information - is, unfortunately, central to the
-current market in the information era. A value network is a set of
-connections between organizations, corporations, and people, in which
-each of the three entities interact with each other for the benefit
-of the entire network. Such a network allows its members to buy, sell,
-and share information. The advantage of said network comes from the
-manner in which an entity applies the resources, influences and insights
-of others in the network. By combining utility and fairness, \textit{NVT
-Network}, our community-driven blockchain platform, not only ensures
-that high quality products stand out, but that quality product creators
-are rewarded accordingly.
+Redundant products overwhelm us all in the information era; judging product authenticity is more difficult than ever before. This creates a harsh environment for product discovery, resulting in the loss of many otherwise valuable products. Rather than worrying about product scarcity, consumers are exhausted by the barrage of goods and services made available to them. This problem - the inefficiency inherent to uncovering valuable information - is, unfortunately, central to the current market in the information era. 
+A value network is a set of connections between organizations, corporations, and people, in which each of the three entities interact with each other for the benefit of the entire network. Such a network allows its members to buy, sell, and share information. The advantage of said network comes from the manner in which an entity applies the resources, influences and insights of others in the network. By combining utility and fairness, \textit{NVT Network}, our community-driven blockchain platform, not only ensures that high quality products stand out, but that quality product creators are rewarded accordingly.
+
 
 %----------------------------------------------------------------------------------------
 
 % Define some commands to keep the formatting separated from the content 
-\global\long\def\keyword#1{\textbf{#1}}%
- 
-\global\long\def\tabhead#1{\textbf{#1}}%
- 
-\global\long\def\code#1{\texttt{#1}}%
- 
-\global\long\def\file#1{\texttt{\bfseries#1}}%
- 
-\global\long\def\option#1{\texttt{\itshape#1}}%
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
 
 \section{Product Value}
 
-Traditionally, markets have measured product value in terms of revenue.
-Product revenue is, in turn, influenced by the broader product market,
-i.e. products are interdependent. Such influence is particularly evident
-in the e-commerce sector, where websites present products through
-a collection of web pages linked by recommendation hyperlinks. This
-creates a large-scale product network. Better metrics for product
-value can help brand or category managers recognize what to offer
-(or stop offering) on their site to customers, what to market more
-heavily, and how to better calculate prices. Such a network is invaluable
-to advertising strategies, too, e.g. in influencing advertisers’
-bidding behavior in pay-per-click (PPC) environments.
+Traditionally, markets have measured product value in terms of revenue. Product revenue is, in turn, influenced by the broader product market, i.e. products are interdependent. Such influence is particularly evident in the e-commerce sector, where websites present products through a collection of web pages linked by recommendation hyperlinks. This creates a large-scale product network. Better metrics for product value can help brand or category managers recognize what to offer (or stop offering) on their site to customers, what to market more heavily, and how to better calculate prices. Such a network is invaluable to advertising strategies, too, e.g. in influencing advertisers’ bidding behavior in pay-per-click (PPC) environments.
 
-Traditionally, marketers have assessed the value of a product or brand
-according to the direct revenues the product creates, for example,
-based on the expected discounted cash flow in measurement methods
-such as that used by Interbrand. Yet the true value generated by a
-product that is part of a network, labeled as ”network value”,
-should take cross product effects into account. Specifically, it should
-consider both the revenues an item generates by directing traffic
-to other items and the revenues an item is not ”entitled” to due
-to traffic directed to it by other items.
+Traditionally, marketers have assessed the value of a product or brand according to the direct revenues the product creates, for example, based on the expected discounted cash flow in measurement methods such as that used by Interbrand. Yet the true value generated by a product that is part of a network, labeled as ”network value”, should take cross product effects into account. Specifically, it should consider both the revenues an item generates by directing traffic to other items and the revenues an item is not ”entitled” to due to traffic directed to it by other items.
 
-In this whitepaper, we propose a method for assessing the network
-value of items in a large scale product network, using an approach
-that combines Google's \textit{PageRank} algorithm for assessing the
-popularity of web pages together with decentralized community user
-data.
+In this whitepaper, we propose a method for assessing the network value of items in a large scale product network, using an approach that combines Google's \textit{PageRank} algorithm for assessing the popularity of web pages together with decentralized community user data.
 
-The revenue of each product in the network, or each node, is derived
-from intrinsic and incoming value. Intrinsic value is self-generated
-by the item and incorporates retailer marketing activity. Incoming
-value is driven by incoming recommendation links, or edges of the
-network, pointing from other products to the product in question.
-It is assumed that the incoming value of a given product ”belongs”
-to the items that point to that product, rather than to the product
-itself. Thus, a product’s network value is defined (i.e., the value
-that takes into account its network relationship) as the sum of its
-intrinsic value and the value it generates for its neighbors through
-its outgoing links. We label this latter value as its outgoing value.
+The revenue of each product in the network, or each node, is derived from intrinsic and incoming value. Intrinsic value is self-generated by the item and incorporates retailer marketing activity. Incoming value is driven by incoming recommendation links, or edges of the network, pointing from other products to the product in question. It is assumed that the incoming value of a given product ”belongs” to the items that point to that product, rather than to the product itself. Thus, a product’s network value is defined (i.e., the value that takes into account its network relationship) as the sum of its intrinsic value and the value it generates for its neighbors through its outgoing links. We label this latter value as its outgoing value.
 
 %----------------------------------------------------------------------------------------
 
 \section{The Search for Product Quality}
 
-The price of a product is an important indicator of its quality. This
-indicator can be used in the proposed model, derived by economic principles,
-in order to construct a prediction and review market for products.
-This idea is derived from the efficient markets hypothesis. The efficient
-market was first introduced by Bachelier, who recognized the efficiency
-of the market in selecting information. The discountings of past,
-present, and future events have their reflections in the prices of
-the market.
+The price of a product is an important indicator of its quality. This indicator can be used in the proposed model, derived by economic principles, in order to construct a prediction and review market for products. This idea is derived from the efficient markets hypothesis. The efficient market was first introduced by Bachelier, who recognized the efficiency of the market in selecting information. The discountings of past, present, and future events have their reflections in the prices of the market.
 
-It is assumed that the investors in the market have access to independent
-analysis of the value of each item. Furthermore, they are considered
-rational, aiming at maximizing their own profits. Therefore, it’s
-practical to use the wisdom of the crowd to set a price for each product,
-where the price is a close prediction of the true value of the product.
+It is assumed that the investors in the market have access to independent analysis of the value of each item. Furthermore, they are considered rational, aiming at maximizing their own profits. Therefore, it’s practical to use the wisdom of the crowd to set a price for each product, where the price is a close prediction of the true value of the product.
 
 \section{A Network-Based Product Prediction Market}
 
-A prediction market is a platform where people trade based on event
-outcomes. Profit comes from making a correct prediction. Reward distribution
-for these predictions follows a simple, yet effective, principle:
-transfer profits from users that make wrong predictions or low quality
-listings to those that produce high quality content. With these rewards
-in mind, users optimize as much as possible for logical and accurate
-predictions, derived from the best methods and information that they
-can find. Reviews and other user contributions will affect the popularity
-and other statistics of each listing.
+A prediction market is a platform where people trade based on event outcomes. Profit comes from making a correct prediction. Reward distribution for these predictions follows a simple, yet effective, principle: transfer profits from users that make wrong predictions or low quality listings to those that produce high quality content. With these rewards in mind, users optimize as much as possible for logical and accurate predictions, derived from the best methods and information that they can find. Reviews and other user contributions will affect the popularity and other statistics of each listing.
 
-The proposed methodology for building NVT's prediction market follows
-a simple but effective idea (Eq. (1.1)). Users can rate a product,
-and if a user thinks the current prediction of the network value of
-a product is lower than the actual value, he can boost said product
-to raise the value. The cost of boosting, goes to the value increase
-of the product. If the final price gets higher than the predicted
-price, the user is rewarded within the NVT Network.
+The proposed methodology for building NVT's prediction market follows a simple but effective idea (Eq. (1.1)). Users can rate a product, and if a user thinks the current prediction of the network value of a product is lower than the actual value, he can boost said product to raise the value. The cost of boosting, goes to the value increase of the product. If the final price gets higher than the predicted price, the user is rewarded within the NVT Network.
 
 \begin{equation}
-\textrm{New Value}=\textrm{Current Value}+\frac{\textrm{Cost of Boost}}{\textrm{Boost}}
+	\textrm{New Value} = \textrm{Current Value} + \frac{\textrm{Cost of Boost}}{\textrm{Boost}}
 \end{equation}
-
 
 \section{Network Effects}
 
-Network effects become significant after a certain subscription percentage
-has been achieved, called critical mass. At the critical mass point,
-the value obtained from the good or service is greater than or equal
-to the price paid for the good or service. As the value of the good
-is determined by the user base, this implies that after a certain
-number of people have subscribed to the service or purchased the good,
-additional people will subscribe to the service or purchase the good
-due to the value exceeding the price.
+Network effects become significant after a certain subscription percentage has been achieved, called critical mass. At the critical mass point, the value obtained from the good or service is greater than or equal to the price paid for the good or service. As the value of the good is determined by the user base, this implies that after a certain number of people have subscribed to the service or purchased the good, additional people will subscribe to the service or purchase the good due to the value exceeding the price.
 
-A key business concern must then be how to attract users prior to
-reaching critical mass. One way is to rely on extrinsic motivation,
-such as a payment, a fee waiver, or a request for friends to sign
-up. A more natural strategy is to build a system that has enough value
-without network effects, at least to early adopters. Then, as the
-number of users increases, the system becomes even more valuable and
-is able to attract a wider user base. Network effect relates to the
-intellectual commons in a positive way.
+A key business concern must then be how to attract users prior to reaching critical mass. One way is to rely on extrinsic motivation, such as a payment, a fee waiver, or a request for friends to sign up. A more natural strategy is to build a system that has enough value without network effects, at least to early adopters. Then, as the number of users increases, the system becomes even more valuable and is able to attract a wider user base. Network effect relates to the intellectual commons in a positive way.
 
-Through P2P networks users are able to share their intellectual property
-in a way that can benefit society as a whole. The sharing of intellectual
-property ultimately relates to economic growth due to the ability
-for creators to share information and still possibly benefit financially
-from it. Additionally, people are able to share types of education
-like scholarly articles, becoming a new form of public commons.
+Through P2P networks users are able to share their intellectual property in a way that can benefit society as a whole. The sharing of intellectual property ultimately relates to economic growth due to the ability for creators to share information and still possibly benefit financially from it. Additionally, people are able to share types of education like scholarly articles, becoming a new form of public commons.
 
-Network externality like Ted.com is an example of how intellectual
-commons benefit society as a whole. Those who present intellectual
-property at Ted conferences are sharing their education on a public
-forum that benefits whoever will listen. Therefore, the larger Ted.com
-network becomes positively correlates to those who benefit from its
-common-pool resources. The reward for being part of a group, society,
-and even the world through a P2P network is one of the greatest benefits
-that a modern common-pool resource can provide. The ability to connect
-and create with people from different cultures, ethnicities, and beliefs
-is something thought to be impossible a few years ago. Without network
-externality this form of communication would have been impossible.
+Network externality like Ted.com is an example of how intellectual commons benefit society as a whole. Those who present intellectual property at Ted conferences are sharing their education on a public forum that benefits whoever will listen. Therefore, the larger Ted.com network becomes positively correlates to those who benefit from its common-pool resources. The reward for being part of a group, society, and even the world through a P2P network is one of the greatest benefits that a modern common-pool resource can provide. The ability to connect and create with people from different cultures, ethnicities, and beliefs is something thought to be impossible a few years ago. Without network externality this form of communication would have been impossible.
 
 \section{Blockchain}
-
 \subsection{Evolution}
 
-Public blockchains have emerged as a plausible messaging substrate
-for applications that require highly reliable communication. Bitcoin
-represents the first generation of blockchain, which has started the
-crypto revolution in the world. The second generation of blockchain
-technology is led by Ethereum. Ethereum allowed for the creation of
-smart contracts which made blockchain allow not only cash like tokens
-but also financial instruments like loans and bonds.
+Public blockchains have emerged as a plausible messaging substrate for applications that require highly reliable communication. Bitcoin represents the first generation of blockchain, which has started the crypto revolution in the world. The second generation of blockchain technology is led by Ethereum. Ethereum allowed for the creation of smart contracts which made blockchain allow not only cash like tokens but also financial instruments like loans and bonds.
 
-An important breakthrough of blockchain is ”Proof of Stake (PoS)”.
-Most ledgers nowadays are secured by ”Proof of Work (PoW)”, which
-require significant amount of processing power and thus electricity.
-In comparison, the PoS systems assign the block rewards to token holders
-proportionally, which significantly reduce the processing power and
-amount of energy needed in order to mine a block and is much more
-power efficient.
+An important breakthrough of blockchain is ”Proof of Stake (PoS)”. Most ledgers nowadays are secured by ”Proof of Work (PoW)”, which require significant amount of processing power and thus electricity. In comparison, the PoS systems assign the block rewards to token holders proportionally, which significantly reduce the processing power and amount of energy needed in order to mine a block and is much more power efficient.
 
 \subsection{Security as a Primary Factor}
+ 
+Blockchain as a transnational platform, has security as its first priority. It is as the name implies, a chain of digitally connected data blocks. Blockchain was created in order to provide means of security by allowing for the existence of a decentralized ledger. Even though blockchain has many security properties, there still exist vulnerabilities and malicious attacks that need to be considered.
 
-Blockchain as a transnational platform, has security as its first
-priority. It is as the name implies, a chain of digitally connected
-data blocks. Blockchain was created in order to provide means of security
-by allowing for the existence of a decentralized ledger. Even though
-blockchain has many security properties, there still exist vulnerabilities
-and malicious attacks that need to be considered.
-
-Blockchains are decentralized across peer-to-peer (P2P) networks that
-need to stay up to date and in sync with a consensus algorithm (e.g.
-PoW or PoS). A PoW based blockchain would require at least 51 per
-cent hash power of the network to perform a double-spend attack that
-could revert transactions. An attack like that highly depends on how
-decentralized the network is, as decentralization always makes it
-harder for attackers to succeed.
+Blockchains are decentralized across peer-to-peer (P2P) networks that need to stay up to date and in sync with a consensus algorithm (e.g. PoW or PoS). A PoW based blockchain would require at least 51 per cent hash power of the network to perform a double-spend attack that could revert transactions. An attack like that highly depends on how decentralized the network is, as decentralization always makes it harder for attackers to succeed.
 
 \subsection{Blockchain Interoperability}
 
-Blockchain interoperability is the ability to transfer information
-from one blockchain to another. Today there are hundreds of blockchain
-networks entirely disconnected from each other, leading to inefficiency.
-This lack of communication makes it difficult for the blockchain technology
-to truly scale and allow its users to enjoy the full potential. Furthermore,
-interoperability can also improve the efficiency of the markets, allowing
-for much faster transactions between different protocols and services.
+Blockchain interoperability is the ability to transfer information from one blockchain to another. Today there are hundreds of blockchain networks entirely disconnected from each other, leading to inefficiency. This lack of communication makes it difficult for the blockchain technology to truly scale and allow its users to enjoy the full potential. Furthermore, interoperability can also improve the efficiency of the markets, allowing for much faster transactions between different protocols and services.
 
 \subsection{Hyperledger}
 
-The Hyperledger Project is a collaborative effort to define and develop
-industrystandard blockchain technology that can be used by developers
-to build applications for multiple industries. It is an open-source
-project hosted by the Linux Foundation, which is home to many other
-open-source initiatives including the widely used Linux operating
-system.
+The Hyperledger Project is a collaborative effort to define and develop industrystandard blockchain technology that can be used by developers to build applications for multiple industries. It is an open-source project hosted by the Linux Foundation, which is home to many other open-source initiatives including the widely used Linux operating system.
 
-The Hyperledger Project works like most other open-source projects;
-various companies contribute software code, and the contributions
-are reviewed, combined and further developed to create the software
-ultimately released by the Project. Companies that have contributed
-software include IBM, Digital Asset Holdings (DAH) and financial-software
-consortium R3. DAH is a financial-software company that also contributed
-the Hyperledger name, which it previously owned. R3 provided a distributed
-ledger designed for financial transactions.
+The Hyperledger Project works like most other open-source projects; various companies contribute software code, and the contributions are reviewed, combined and further developed to create the software ultimately released by the Project. Companies that have contributed software include IBM, Digital Asset Holdings (DAH) and financial-software consortium R3. DAH is a financial-software company that also contributed the Hyperledger name, which it previously owned. R3 provided a distributed ledger designed for financial transactions.
 
-Hyperledger currently has close to 100 members and more than 100 contributors.
-Under the umbrella of the Hyperledger Project are several individual
-software development projects, all of which are at an early ”incubation”
-stage. The Hyperledger Fabric project focuses on core blockchain technology,
-including support for smart contracts, and is designed to act as a
-foundation for developing blockchain applications or solutions.
+Hyperledger currently has close to 100 members and more than 100 contributors. Under the umbrella of the Hyperledger Project are several individual software development projects, all of which are at an early ”incubation” stage. The Hyperledger Fabric project focuses on core blockchain technology, including support for smart contracts, and is designed to act as a foundation for developing blockchain applications or solutions.
 
 \subsection{Interledger}
 
-Interledger is not a distributed ledger project per se. Instead, it
-focuses on connecting different ledgers. The project centers on the
-Interledger Protocol (ILP), which is designed to enable communication
-between different international payment systems around the world.
-The idea is that any payer should be able to pay any payee, quickly
-and at little or no cost, without the need for both parties to set
-up accounts on the same global payment service.
+Interledger is not a distributed ledger project per se. Instead, it focuses on connecting different ledgers. The project centers on the Interledger Protocol (ILP), which is designed to enable communication between different international payment systems around the world. The idea is that any payer should be able to pay any payee, quickly and at little or no cost, without the need for both parties to set up accounts on the same global payment service.
 
 \subsection{Scalability}
 
-One approach to the scalability issues is by splitting up different
-transactions across multiple different blockchains. While this lowers
-the transactional demand on any blockchain used, the hash pool power
-will be just as low. With smaller networks on each blockchain, it
-is easier for someone to take over enough hash power in order to perform
-a double spend attack. While it offers some degree of scalability,
-security is considerably lower and it is definitely not a long-term
-solution. Multiple blockchains also limit cross chain transactions
-to exchanges that charge additional trading fees, have long processing
-times and often security issues.
+One approach to the scalability issues is by splitting up different transactions across multiple different blockchains. While this lowers the transactional demand on any blockchain used, the hash pool power will be just as low. With smaller networks on each blockchain, it is easier for someone to take over enough hash power in order to perform a double spend attack. While it offers some degree of scalability, security is considerably lower and it is definitely not a long-term solution. Multiple blockchains also limit cross chain transactions to exchanges that charge additional trading fees, have long processing times and often security issues.
 
 \subsection{Lightning Network}
 
-Lightning Network is a ”second layer” payment protocol that operates
-on top of a blockchain (most commonly Bitcoin). It enables instant
-transactions between participating nodes and has been touted as a
-solution to the Bitcoin scalability problem. It features a peer-to-peer
-system for making micro-payments of digital cryptocurrency through
-a network of bidirectional payment channels without delegating custody
-of funds and minimizing trust of third parties.
+Lightning Network is a ”second layer” payment protocol that operates on top of a blockchain (most commonly Bitcoin). It enables instant transactions between participating nodes and has been touted as a solution to the Bitcoin scalability problem. It features a peer-to-peer system for making micro-payments of digital cryptocurrency through a network of bidirectional payment channels without delegating custody of funds and minimizing trust of third parties.
 
-Normal use of the Lightning Network consists of opening a payment
-channel by committing a funding transaction to the relevant blockchain,
-followed by making any number of Lightning transactions that update
-the tentative distribution of the channel’s funds without broadcasting
-to the blockchain, optionally followed by closing the payment channel
-by broadcasting the final version of the transaction to distribute
-the channel’s funds.
+Normal use of the Lightning Network consists of opening a payment channel by committing a funding transaction to the relevant blockchain, followed by making any number of Lightning transactions that update the tentative distribution of the channel’s funds without broadcasting to the blockchain, optionally followed by closing the payment channel by broadcasting the final version of the transaction to distribute the channel’s funds.
 
 \subsection{Proof of Work (POW)}
 
-This is the most popular algorithm being used by currencies such as
-Bitcoin and (at the time of writing) Ethereum, each one with its own
-differences. In PoW, in order for an actor to be elected as a leader
-and choose the next block to be added to the blockchain they have
-to find a solution to a particular mathematical problem. Given that
-the hash function used is cryptographically secure, the only way to
-find a solution to that problem is by brute force (trying all possible
-combinations). In other words, the actor who will solve the aforementioned
-problem first the majority of the time is the one who has access to
-the most computing power. These actors are also called miners. It
-has been widely successful primarily due to its following properties:
+This is the most popular algorithm being used by currencies such as Bitcoin and (at the time of writing) Ethereum, each one with its own differences. In PoW, in order for an actor to be elected as a leader and choose the next block to be added to the blockchain they have to find a solution to a particular mathematical problem. Given that the hash function used is cryptographically secure, the only way to find a solution to that problem is by brute force (trying all possible combinations). In other words, the actor who will solve the aforementioned problem first the majority of the time is the one who has access to the most computing power. These actors are also called miners. It has been widely successful primarily due to its following properties:
+
 \begin{enumerate}
-\item It is hard to find a solution to that given problem. 
-\item When given a solution to that problem it is easy to verify that it
-is correct. 
+\item It is hard to find a solution to that given problem.
+\item When given a solution to that problem it is easy to verify that it is correct.
 \end{enumerate}
-Whenever a new block is mined, that miner gets rewarded with some
-currency (block reward, transaction fees) and thus are incentivized
-to keep mining. In PoW, other nodes verify the validity of the block
-by checking that the hash of the data of the block is less than a
-preset number. Due to the limited supply of computational power, miners
-are also incentivized not to cheat. Attacking the network would cost
-a lot because of the high cost of hardware, energy, and potential
-mining profits missed.
+
+Whenever a new block is mined, that miner gets rewarded with some currency (block reward, transaction fees) and thus are incentivized to keep mining. In PoW, other nodes verify the validity of the block by checking that the hash of the data of the block is less than a preset number. Due to the limited supply of computational power, miners are also incentivized not to cheat. Attacking the network would cost a lot because of the high cost of hardware, energy, and potential mining profits missed.
 
 \subsection{Proof of Stake (POS)}
 
-PoS takes away the energy and computational power requirement of PoW
-and replaces it with stake. Stake is referred to as an amount of crypto
-currency an actor is willing to lock up for a certain amount of time.
-In return, they get a chance proportional to their stake to be the
-next leader and select the next block.
+PoS takes away the energy and computational power requirement of PoW and replaces it with stake. Stake is referred to as an amount of crypto currency an actor is willing to lock up for a certain amount of time. In return, they get a chance proportional to their stake to be the next leader and select the next block.
 
-The main issue with PoS is the so called ”nothing at stake” problem.
-Essentially, in the case of a fork, stakers are not disincentivized
-from staking in both chains, and the danger of double spending problems
-increase. In order to avoid that, hybrids consensus algorithms appeared,
-such as the PoW-PoS combination. Active research towards a secure
-and decentralized PoS protocol is being done by the Ethereum Foundation
-with Casper The Friendly Ghost and Casper The Friendly Finality Gadget.
+The main issue with PoS is the so called ”nothing at stake” problem. Essentially, in the case of a fork, stakers are not disincentivized from staking in both chains, and the danger of double spending problems increase. In order to avoid that, hybrids consensus algorithms appeared, such as the PoW-PoS combination. Active research towards a secure and decentralized PoS protocol is being done by the Ethereum Foundation with Casper The Friendly Ghost and Casper The Friendly Finality Gadget.
 
 %----------------------------------------------------------------------------------------
 
 \section{Ethereum}
 
-Ethereum is a decentralized platform that runs smart contracts: applications
-that run exactly as programmed without any possibility of downtime,
-censorship, fraud or third-party interference. These apps run on a
-custom built blockchain, an enormously powerful shared global infrastructure
-that can move value around and represent the ownership of property.
-This enables developers to create markets, store registries of debts
-or promises, move funds in accordance with instructions given long
-in the past (like a will or a futures contract) and many other things
-that have not been invented yet, all without a middleman or counterparty
-risk.
+Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference. These apps run on a custom built blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property. This enables developers to create markets, store registries of debts or promises, move funds in accordance with instructions given long in the past (like a will or a futures contract) and many other things that have not been invented yet, all without a middleman or counterparty risk.
 
-Ether is a necessary element; fuel for operating the distributed application
-platform Ethereum. It is a form of payment made by the clients of
-the platform to the machines executing the requested operations. Ether
-is the incentive ensuring that developers write quality applications
-(wasteful code costs more) and that the network remains healthy (people
-are compensated for their contributed resources).
+Ether is a necessary element; fuel for operating the distributed application platform Ethereum. It is a form of payment made by the clients of the platform to the machines executing the requested operations. Ether is the incentive ensuring that developers write quality applications (wasteful code costs more) and that the network remains healthy (people are compensated for their contributed resources).
 
 \subsection{A Decentralized Network}
 
-On traditional server architectures, every application has to set
-up its own servers that run their own code in isolated silos, making
-sharing of data hard. If a single app is compromised or goes offline,
-many users and other apps are affected. On a blockchain, anyone can
-set up a node that replicates the necessary data for all nodes to
-reach an agreement and be compensated by users and app developers.
-This allows user data to remain private and apps to be decentralized
-like the Internet was supposed to work.
+On traditional server architectures, every application has to set up its own servers that run their own code in isolated silos, making sharing of data hard. If a single app is compromised or goes offline, many users and other apps are affected. On a blockchain, anyone can set up a node that replicates the necessary data for all nodes to reach an agreement and be compensated by users and app developers. This allows user data to remain private and apps to be decentralized like the Internet was supposed to work.
 
 \subsection{ERC20}
 
-ERC20 is a technical standard used for smart contracts on the Ethereum
-blockchain for implementing tokens. ERC20 defines a common list of
-rules for Ethereum tokens to follow within the larger Ethereum ecosystem,
-allowing developers to accurately predict interaction between tokens.
-These rules include how the tokens are transferred between addresses
-and how data within each token is accessed. 
-\end{document}
+ERC20 is a technical standard used for smart contracts on the Ethereum blockchain for implementing tokens. ERC20 defines a common list of rules for Ethereum tokens to follow within the larger Ethereum ecosystem, allowing developers to accurately predict interaction between tokens. These rules include how the tokens are transferred between addresses and how data within each token is accessed.
